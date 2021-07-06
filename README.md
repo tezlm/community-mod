@@ -1,5 +1,5 @@
 # community mod
-mod that everyone can pr to
+add whatever you want
 
 ## how to add stuff
 - json/hjson: `/resources/content/...`
