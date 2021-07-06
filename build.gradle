@@ -10,16 +10,12 @@ sourceCompatibility = 1.8;
 sourceSets.main{
     resources.srcDir("resources/");
     
-    [java, groovy, scala, kotlin].each{
-        it.srcDir("src/");
-    }
+    [java, groovy, scala, kotlin].each{it.srcDir("src/")};
 }
 
 repositories{
     mavenCentral();
-    maven{
-        url("https://jitpack.io");
-    }
+    maven{url("https://jitpack.io")};
 }
 
 dependencies{
@@ -35,7 +31,7 @@ jar{
     
     from{
         configurations.runtimeClasspath.collect{
-            it.isDirectory() ? it : zipTree(it)
+            it.isDirectory() ? it : zipTree(it);
         }
     }
 }
