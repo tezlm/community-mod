@@ -2,7 +2,7 @@ package chaos;
 
 import mindustry.mod.*;
 
-
+@SuppressWarnings("unused")
 class Main extends Mod{
     def contentLists = [
         // ...
