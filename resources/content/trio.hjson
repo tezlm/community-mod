@@ -1,0 +1,7 @@
+size: 1
+health: 220
+requirements: [    
+  copper/50
+]
+category: turret
+research: duo
