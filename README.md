@@ -38,3 +38,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 > what happened to the merge bot. thats right you need to add more then you delete
 
 -mega cat
+
+> *"If IBM saw this, they would only understand we have made an attempt at making a computer, except there isnt a computer here nor IBM. 5 stars.*"
+
+-FarmerThanos
