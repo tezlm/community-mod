@@ -1,6 +1,5 @@
 package chaos
 
-import mindustry.ctype.ContentList;
 import mindustry.mod.*;
 
 @SuppressWarnings("unused")
