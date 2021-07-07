@@ -1,4 +1,6 @@
-# Community mod
+# The Community Mod
+**A Mod by The Community for the Community!**
+
 Add whatever you want, just Pull Request and **ALL** Requests will be automaticaly Merged!!!
 
 ## How to add stuff
