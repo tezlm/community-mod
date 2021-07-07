@@ -1,7 +1,7 @@
-# community mod
-add whatever you want
+# Community mod
+Add whatever you want, just Pull Request and **ALL** Requests will be automaticaly be Merged!!!
 
-## how to add stuff
+## How to add stuff
 - json/hjson: `/resources/content/...`
 - js: `/resources/scripts/...`
 - java/groovy/kotlin/scala: `/src/chaos/...`
