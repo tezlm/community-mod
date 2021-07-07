@@ -1,6 +1,7 @@
 package chaos
 
 import arc.Events
+import chaos.horny.HentaiMain
 import mindustry.Vars
 import mindustry.game.EventType
 import mindustry.mod.Mod
@@ -30,6 +31,6 @@ class Main extends Mod{
 
 	@Override
 	void init(){
-
+		new HentaiMain();
 	}
 }
