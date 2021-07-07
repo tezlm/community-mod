@@ -1,9 +1,9 @@
-package main.code.chaos.independent;
+package chaos.independent;
 
 import arc.func.Cons;
 import arc.util.Interval;
 import arc.util.Timer;
-import main.code.chaos.ChaosSounds;
+import chaos.ChaosSounds;
 import mindustry.gen.Bullet;
 import mindustry.gen.Groups;
 import mindustry.gen.Unit;
