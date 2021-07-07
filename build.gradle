@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        name = "chaos"
+        jarName = "chaos"
 
         sdkVersion = '30'
         sdkRoot = System.getenv("ANDROID_HOME")
@@ -40,7 +40,7 @@ dependencies{
 }
 
 jar{
-    archiveFileName.set("${ext.name}.jar")
+    archiveFileName.set("${jarName}.jar")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     
     from{
@@ -60,9 +60,9 @@ compileGroovy{
 
 // credits to sonnicon
 task dexify(type: Jar, dependsOn: [jar]){
-    archiveFileName.set("dexed-${ext.name}.jar")
+    archiveFileName.set("dexed-${jarName}.jar")
 
-    def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "${ext.name}.jar")
+    def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "${jarName}.jar")
     def dexedArtifact = new File(tasks.dexify.getTemporaryDir(), "dexed.jar")
     
     doFirst{
