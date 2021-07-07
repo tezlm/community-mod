@@ -25,6 +25,14 @@ plugins{
 
 sourceCompatibility = 1.8
 
+sourceSets.main{
+    resources.srcDir("resources/");
+    
+    [java, groovy, scala, kotlin].each{
+        it.srcDir("src/");
+    }
+}
+
 repositories{
     mavenCentral()
     maven{url("https://jitpack.io")}
