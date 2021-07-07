@@ -30,4 +30,4 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 -NiChrosia
 
 > what happened to the merge bot
-- mega cat
+-mega cat
