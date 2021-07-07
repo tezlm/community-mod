@@ -1,4 +1,17 @@
 import java.io.File
+import java.util.concurrent.TimeUnit
+import kotlin.math.round
+
+fun String.runCommand(
+    workingDir: File = File("."),
+): String? = runCatching {
+    ProcessBuilder(split(" "))
+        .directory(workingDir)
+        .redirectOutput(ProcessBuilder.Redirect.PIPE)
+        .redirectError(ProcessBuilder.Redirect.PIPE)
+        .start()
+        .inputStream.bufferedReader().readText()
+}.onFailure { it.printStackTrace() }.getOrNull()
 
 fun getRandomLetter(): String {
     var letter = ('a'..'z').random().toString()
@@ -22,7 +35,13 @@ ${getRandomLetters()}"""
 }
 
 fun generateTag(): String {
-    return "v${getRandomLetters(6)}"
+    val version = "1.0"
+    val lastReleaseTag = "v1.0"
+
+    val command = "git log $lastReleaseTag..HEAD --oneline".runCommand()
+    val commitsSinceLastRelease = command?.split("\n")?.size
+
+    return "v$version.${commitsSinceLastRelease ?: 0}"
 }
 
 val outputFile = File("output.json")
