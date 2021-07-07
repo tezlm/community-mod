@@ -13,6 +13,11 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 
 ## Reviews:
 
+> Do you think this was a good idea?
+> Yes
+
+-Anuke
+
 > *"10/10 Mod"*
 
 -RT
@@ -28,3 +33,7 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 > *"what a great idea"*
 
 -NiChrosia
+
+> what happened to the merge bot. thats right you need to add more then you delete
+
+-mega cat
