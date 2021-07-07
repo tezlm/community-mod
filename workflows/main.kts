@@ -7,8 +7,8 @@ fun getRandomLetter(): String {
     return letter
 }
 
-fun getRandomLetters(amount: Int): Iterable<String> {
-    return (1 until amount).map { getRandomLetter() }
+fun getRandomLetters(amount: Int): String {
+    return (1 until amount).map { getRandomLetter() }.joinToString("")
 }
 
 fun generateDescription(): String {
