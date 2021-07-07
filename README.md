@@ -1,5 +1,5 @@
 # Community mod
-Add whatever you want, just Pull Request and **ALL** Requests will be automaticaly be Merged!!!
+Add whatever you want, just Pull Request and **ALL** Requests will be automaticaly Merged!!!
 
 ## How to add stuff
 - json/hjson: `/resources/content/...`
