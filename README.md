@@ -28,7 +28,3 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 > *"what a great idea"*
 
 -NiChrosia
-
-> *"IBM would be proud"*
-
--FarmerThanos
