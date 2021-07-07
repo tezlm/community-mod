@@ -5,15 +5,15 @@ import mindustry.mod.*;
 
 @SuppressWarnings("unused")
 class Main extends Mod{
-    ArrayList<ContentList> contentLists = [
-            ChaosBlocks,
-            ChaosItems,
-            ChaosLiquids
+    def contentLists = [
+            new ChaosBlocks(),
+            new ChaosItems(),
+            new ChaosLiquids()
     ];
     
     @Override
     void loadContent(){
-        contentLists.each(ContentList::load);
+        contentLists.each{it.load()};
     }
     
     @Override
