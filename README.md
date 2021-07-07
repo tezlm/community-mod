@@ -28,3 +28,6 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 > *"what a great idea"*
 
 -NiChrosia
+
+> what happened to the merge bot
+- mega cat
