@@ -1,16 +1,19 @@
-package chaos;
+package chaos
 
+import mindustry.ctype.ContentList;
 import mindustry.mod.*;
 
-
+@SuppressWarnings("unused")
 class Main extends Mod{
-    def contentLists = [
-        // ...
+    ArrayList<ContentList> contentLists = [
+            ChaosBlocks,
+            ChaosItems,
+            ChaosLiquids
     ];
     
     @Override
     void loadContent(){
-        contentLists.each{it.load()};
+        contentLists.each(ContentList::load);
     }
     
     @Override
