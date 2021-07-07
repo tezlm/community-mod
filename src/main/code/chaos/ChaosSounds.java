@@ -1,4 +1,4 @@
-package chaos;
+package main.code.chaos;
 
 import arc.Core;
 import arc.assets.AssetDescriptor;
