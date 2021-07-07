@@ -13,8 +13,7 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 
 ## Reviews:
 
-> Do you think this was a good idea?
-> yes
+> Do you think this was a good idea?\nyes
 
 -Anuke
 
