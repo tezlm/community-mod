@@ -17,70 +17,68 @@ plugins{
     id "org.jetbrains.kotlin.jvm" version "1.5.0"
 }
 
-sourceCompatibility = 1.8;
+sourceCompatibility = 1.8
 
 sourceSets.main{
-    resources.srcDir("resources/");
+    resources.srcDir("resources/")
     
-    [java, groovy, scala, kotlin].each{it.srcDir("src/")};
+    [java, groovy, scala, kotlin].each{it.srcDir("src/")}
 }
 
 repositories{
-    mavenCentral();
-    maven{url("https://jitpack.io")};
+    mavenCentral()
+    maven{url("https://jitpack.io")}
 }
 
 dependencies{
-    implementation("org.codehaus.groovy:groovy-all:3.0.8");
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0");
-    implementation("org.scala-lang:scala-library:2.11.12");
-    compileOnly("com.github.Anuken.Mindustry:core:v127.2");
+    implementation("org.codehaus.groovy:groovy-all:3.0.8")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0")
+    implementation("org.scala-lang:scala-library:2.11.12")
+    compileOnly("com.github.Anuken.Mindustry:core:v127.2")
 }
 
 jar{
-    archiveFileName.set("chaos.jar");
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE;
+    archiveFileName.set("chaos.jar")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     
     from{
         configurations.runtimeClasspath.collect{
-            it.isDirectory() ? it : zipTree(it);
+            it.isDirectory() ? it : zipTree(it)
         }
     }
 }
 
 compileGroovy{
-    dependsOn("compileScala");
-    classpath += files(compileScala.destinationDir);
+    dependsOn("compileScala")
+    classpath += files(compileScala.destinationDir)
     
-    dependsOn("compileKotlin");
-    classpath += files(compileKotlin.destinationDir);
+    dependsOn("compileKotlin")
+    classpath += files(compileKotlin.destinationDir)
 }
 
 // credits to sonnicon
 task dexify(type: Jar, dependsOn: [jar]){
-    archiveFileName.set("dexed-chaos.jar");
+    archiveFileName.set("dexed-chaos.jar")
 
-    def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "chaos.jar");
-    def dexedArtifact = new File(tasks.dexify.getTemporaryDir(), "dexed.jar");
+    def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "chaos.jar")
+    def dexedArtifact = new File(tasks.dexify.getTemporaryDir(), "dexed.jar")
     
     doFirst{
-        workingDir(dexedArtifact.parent);
-
         def files = (configurations.compileClasspath.asList() + configurations.runtimeClasspath.asList() + [new File("$sdkRoot/platforms/android-$sdkVersion/android.jar")])
         def dependencies = files.collect{ "--classpath $it.path" }.join(" ")
 
         //dex and desugar files - this requires d8 in your PATH
         doExec("d8 $dependencies --min-api 14 --output ${project.archivesBaseName}Android.jar ${project.archivesBaseName}Desktop.jar")
 
-//            def command = ["d8", "--min-api", "16", "--output", dexedArtifact, jarArtifact];
+//            def command = ["d8", "--min-api", "16", "--output", dexedArtifact, jarArtifact]
 //            if(System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows")){
-//                commandLine("cmd", "/c", *command);
+//                commandLine("cmd", "/c", *command)
 //            }else{
-//                commandLine(*command);
+//                commandLine(*command)
 //            }
     }
 
-    from(zipTree(jarArtifact), zipTree(dexedArtifact));
+    from(zipTree(jarArtifact), zipTree(dexedArtifact))
 }
 
 task buildDex dependsOn "build", "dexify"
