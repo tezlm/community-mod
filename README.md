@@ -21,6 +21,10 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 
 -CancerGuy
 
-> *how do you compile"*
+> *"how do you compile"*
 
 -MrDuck557
+
+> *"what a great idea"*
+
+-NiChrosia
