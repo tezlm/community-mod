@@ -10,6 +10,10 @@ buildscript {
             proc.waitForProcessOutput(System.out, System.err)
         }
     }
+
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0")
+    }
 }
 
 plugins{
@@ -33,10 +37,9 @@ repositories{
 }
 
 dependencies{
-    implementation("org.codehaus.groovy:groovy-all:3.0.8")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0")
-    implementation("org.scala-lang:scala-library:2.11.12")
     compileOnly("com.github.Anuken.Mindustry:core:v127.2")
+    implementation("org.codehaus.groovy:groovy-all:3.0.8")
+    implementation("org.scala-lang:scala-library:2.11.12")
 }
 
 jar{
