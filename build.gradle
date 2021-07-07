@@ -26,10 +26,10 @@ plugins{
 sourceCompatibility = 1.8
 
 sourceSets.main{
-    resources.srcDir("src/main/resources/");
-    
+    resources.srcDir("src/main/resources/")
+
     [java, groovy, scala, kotlin].each{
-        it.srcDir("src/main/");
+        it.srcDir("src/main/code")
     }
 }
 
