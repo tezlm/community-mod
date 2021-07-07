@@ -13,14 +13,14 @@ Add whatever you want, just Pull Request and **ALL** Requests will be automatica
 
 ## Reviews:
 
-*"10/10 Mod"*
+> *"10/10 Mod"*
 
 -RT
 
-*"11/10, Truly a masterpiece, handcrafted by the best of us."*
+> *"11/10, Truly a masterpiece, handcrafted by the best of us."*
 
 -CancerGuy
 
-*"how do you compile"*
+> *how do you compile"*
 
 -MrDuck557
