@@ -1,19 +1,12 @@
-function random(array) {
-	const index = Math.round(Math.random() * array.length);
-	return array[index];
-}
+const chars = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM".split("");
 
-function multipleRandom(array, amount) {
-	let randoms = [];
-	for (i = 0; i < amount; i++) {
-		randoms = randoms.concat(random(array));
-	}
-	return randoms;
+function random(arr) {
+	return arr[Math.round(Math.random() * arr.length)];
 }
 
 Events.on(ClientPreConnectEvent, () => {
-	const result = multipleRandom("0123456789".split(""), 8).join("");
- 	const uuid = Base64Coder.encodeString(result);
+	let uuid = "";
+	for (i = 0; i < 10; i++) uuid += random(chars);
 	Core.settings.put("uuid", uuid);
 });
 
