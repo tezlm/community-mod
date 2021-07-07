@@ -1,7 +1,7 @@
 {
     "name": "community-mod",
     "displayName": "community mod!",
-    "description": "please dont go horribly wrong",
+    "description": "A Mod made by the Community for the Community!",
     "version": "0.0.1",
     "minGameVersion": 127.2,
     "main": "chaos.Main"
