@@ -55,7 +55,7 @@ task dexify(type: Jar){
         exec{
             workingDir(dexedArtifact.parent);
             
-            def command = ["d8", "--min-api", "14", "--output", dexedArtifact, jarArtifact];
+            def command = ["d8", "--min-api", "16", "--output", dexedArtifact, jarArtifact];
             if(System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows")){
                 commandLine("cmd", "/c", *command);
             }else{
