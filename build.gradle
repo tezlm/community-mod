@@ -57,21 +57,20 @@ compileGroovy{
 }
 
 // credits to sonnicon
-task dexify(type: Jar){
+task dexify(type: Jar, dependsOn: [jar]){
     archiveFileName.set("dexed-chaos.jar");
 
     def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "chaos.jar");
     def dexedArtifact = new File(tasks.dexify.getTemporaryDir(), "dexed.jar");
     
     doFirst{
-        exec{
-            workingDir(dexedArtifact.parent);
+        workingDir(dexedArtifact.parent);
 
-            def files = (configurations.compileClasspath.asList() + configurations.runtimeClasspath.asList() + [new File("$sdkRoot/platforms/android-$sdkVersion/android.jar")])
-            def dependencies = files.collect{ "--classpath $it.path" }.join(" ")
+        def files = (configurations.compileClasspath.asList() + configurations.runtimeClasspath.asList() + [new File("$sdkRoot/platforms/android-$sdkVersion/android.jar")])
+        def dependencies = files.collect{ "--classpath $it.path" }.join(" ")
 
-            //dex and desugar files - this requires d8 in your PATH
-            doExec("d8 $dependencies --min-api 14 --output ${project.archivesBaseName}Android.jar ${project.archivesBaseName}Desktop.jar")
+        //dex and desugar files - this requires d8 in your PATH
+        doExec("d8 $dependencies --min-api 14 --output ${project.archivesBaseName}Android.jar ${project.archivesBaseName}Desktop.jar")
 
 //            def command = ["d8", "--min-api", "16", "--output", dexedArtifact, jarArtifact];
 //            if(System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows")){
@@ -79,7 +78,6 @@ task dexify(type: Jar){
 //            }else{
 //                commandLine(*command);
 //            }
-        }
     }
 
     from(zipTree(jarArtifact), zipTree(dexedArtifact));
