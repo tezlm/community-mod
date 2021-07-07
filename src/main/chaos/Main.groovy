@@ -5,9 +5,9 @@ import mindustry.mod.*;
 @SuppressWarnings("unused")
 class Main extends Mod{
 	  def contentLists = [
-	          new ChaosBlocks(),
-	          new ChaosItems(),
-	          new ChaosLiquids()
+			  new ChaosBlocks(),
+			  new ChaosItems(),
+			  new ChaosLiquids()
 	  ];
 	  
 	  @Override
