@@ -17,11 +17,11 @@ jobs:
         uses: android-actions/setup-android@v2.0.1
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-      - name: build-tools
-        run: sdkmanager "build-tools;29.0.3"
+      - name: Install Android SDK
+        run: sdkmanager "build-tools;30.0.1"
 
       - name: Add Android SDK to PATH
-        run: echo "${ANDROID_HOME}/build-tools/29.0.3" >> $GITHUB_PATH
+        run: echo "${ANDROID_HOME}/build-tools/30.0.1" >> $GITHUB_PATH
 
       - name: Mark as executable
         run: chmod +x gradlew
