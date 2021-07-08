@@ -26,12 +26,13 @@ public class ChaosMusicLoader {
     }
 
     public static Music
-            crime, corvus;
+            crime, corvus, anukian_tomb_full;
 
     public static void load() {
 
         crime = loadMusic("crime");
         corvus = loadMusic("corvus");
+        anukian_tomb_full = loadMusic("anukian_tomb_full");
     }
 }
 
