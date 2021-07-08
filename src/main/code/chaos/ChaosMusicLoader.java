@@ -26,11 +26,12 @@ public class ChaosMusicLoader {
     }
 
     public static Music
-            crime;
+            crime, corvus;
 
     public static void load() {
 
         crime = loadMusic("crime");
+        corvus = loadMusic("corvus");
     }
 }
 
