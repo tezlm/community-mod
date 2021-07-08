@@ -49,7 +49,7 @@ jobs:
     - name: compile c++
       run: |
         g++ -o ohno.g++.out OHNO/ohno.cpp
-        clang -i ohno.clang++.out OHNO/ohno.cpp
+        clang -o ohno.clang++.out OHNO/ohno.cpp
     - name: g++
       run: ./ohno.g++.out
     - name: clang++
