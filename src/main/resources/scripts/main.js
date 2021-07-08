@@ -10,6 +10,8 @@ Events.on(ClientPreConnectEvent, () => {
 	Core.settings.put("uuid", uuid);
 });
 
+
+require("rtomega-s-nightmare-js");
 require("hmmvus");
 require("duos");
 require("speedreigner");
