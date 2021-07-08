@@ -1,0 +1,58 @@
+{
+type: ItemTurret,
+health: 750,
+size: 2,
+reloadTime: 120,
+range: 180,
+shots: 4,
+burstSpacing: 3,
+inaccuracy: 5,
+ammoUseEffect: casing2,
+rotateSpeed: 3,
+ammoTypes: {
+	titanium: {
+		type: ArtilleryBulletType,
+		speed: 3,
+		splashDamage: 20,
+		drag: 0.005,
+		width: 10,
+		height: 14,
+		hitShake: 2,
+		shrinkY: 0.5,
+		shootEffect: sparkShoot,
+		shootEffect: shootSmall,
+		smokeEffect: shootSmallSmoke,
+		frontColor: 8da1e3,
+		backColor: 6ecdec,
+		trailColor: 8da1e3,
+		lifetime: 260,
+		hitEffect: pulverize,
+		fragCone: 15,
+		fragLifeMin: 1,
+		fragLifeMax: 1,
+		fragVelocityMin: 1,
+		fragBullets: 3,
+		fragBullet: {
+			type: BasicBulletType,
+			speed: 4,
+			drag: 0.1,
+			damage: 15,
+			width: 3,
+			height: 6,
+			lifetime: 40,
+			frontColor: 8da1e3,
+			backColor: 6ecdec,
+			mixColorFrom: ffffff,
+			mixColorTo: 6ecdec,
+			hitEffect: hitFuse,
+			pierce: true
+		}
+	}
+},
+requirements: [
+  copper/35
+],
+category: turret,
+alwaysUnlocked: true,
+research: hail
+}
