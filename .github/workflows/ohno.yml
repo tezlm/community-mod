@@ -3,7 +3,7 @@ name: ohno-tests
 on: [push]
 
 jobs:
-  OHNO
+  OHNO:
     runs-on: ubuntu-latest
 
     steps:
