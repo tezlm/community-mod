@@ -24,7 +24,7 @@ jobs:
     - name: install java
       run: sudo apt install -y default-jre
     - name: compile java
-      run: javac OHNO/ohno.java
+      run: javac -d . OHNO/ohno.java
     - name: java
       run: java ohno
 
