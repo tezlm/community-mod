@@ -77,3 +77,13 @@ jobs:
         zsh OHNO/ohno.sh
         yash OHNO/ohno.sh
         xonsh OHNO/ohno.sh
+    - name: install rust
+      uses: actions-rs/toolchain@v1
+      with: 
+        toolchain: stable
+        default: true
+        override: true
+    - name: compile rust
+      run: rustc OHNO/ohno.rs -o ohno-rs
+    - name: run rust
+      run: ./OHNO/ohno-rs
