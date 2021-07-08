@@ -54,3 +54,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 > *"Rated M for Masterpiece , 10/10 would pick it up and donate to the people working on this"*
 
 -Roomba
+
+> *"The 21st century's gold. I have no words and this mod depicts our nowadays humor. Very funny."*
+
+-Emanuel G
