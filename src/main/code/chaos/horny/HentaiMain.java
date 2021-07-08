@@ -2,13 +2,11 @@ package chaos.horny;
 
 //owned by horny part of cumunity
 
-import arc.Events;
 import arc.audio.Sound;
-import mindustry.game.EventType;
+import chaos.horny.interfaces.HentaiInterfaces;
 import mindustry.game.Schematic;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static mindustry.Vars.ui;
 
@@ -19,34 +17,19 @@ public class HentaiMain{
 
     public HentaiMain(){
         if(showHornyConfirm()){
-            eventsLoader();
-            interfaceOverride();
             loadAssets();
+            new HentaiEvents();
+            new HentaiInterfaces();
         }
     }
-//you got java, you got classes, and the first thing you do is to have *everything* put into the same class. do you have any idea how bad this is, do you have any idea that you are literally not using the main part of java?
-    public void eventsLoader(){
-        Events.on(EventType.WorldLoadEvent.class,r->{
-            //hornySoundsMap.get("worldLoadEvent").play(1f, 1f, 0f);
-        });
-        Events.on(EventType.UnitDestroyEvent.class,e->{
-            if(e.unit.isPlayer()){
-                //hornySoundsMap.get("yamete_kudosai").play(1f, 1f, 0f);
-            }else{
-                //hornySoundsMap.get("hornyOhNo1").play(1f, 1f, 0f);
-            }
-        });
-    }
-    public void interfaceOverride(){
-        //some custom interfaces and menus should be there
-    }
+
     public void loadAssets(){
         //coming soon, assets in active search. If you can help with search send any content to misakacha2545@gmail.com or сестрёнка#8227
     }
 
     private boolean showHornyConfirm(){
         try{
-        ui.showConfirm("@confirm", "Is you 18+ older?", () -> {
+        ui.showConfirm("@confirm", "Are you 18+ older?", () -> {
             throw new RuntimeException("Hentai is confirmed");
         });
         }catch (Exception confirmed){
