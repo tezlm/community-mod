@@ -47,7 +47,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 -cyberflame
 
-> *"10/10 mod, but how does one download the mod"*
+> *"10/10 mod, only 3% of it works"*
 
 -SMOLKEYS
 
