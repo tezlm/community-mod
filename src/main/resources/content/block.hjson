@@ -1,0 +1,27 @@
+type: PowerTurret
+name: block
+description: power block
+details: ok what am i doing at this point
+targetAir: true
+targetGround: true
+health: 987654321
+size: 2
+inaccuracy: 360
+reloadTime: 10
+range: 200
+shots: 2
+spread: 360
+rotateSpeed: 90
+firingMoveFract: 0.5
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 30
+  colors: [ffffff, ffffff]
+  shootSound: beam
+  length: 190
+  width: 8
+  status: melting
+  lifetime: 200
+}
+requirements: []
+category: turret
