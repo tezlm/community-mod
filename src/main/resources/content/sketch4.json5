@@ -1,0 +1,73 @@
+type: mech
+localizedName: sketch4
+details : "Extr!%de gun: gun ."
+flying: false
+canBoost: false
+hitSize: 50
+health: 1500
+armor: 40
+range: 100
+rotateSpeed: 50
+drag: 1
+accel: 2
+speed: 4
+mineSpeed: 40
+mineTier: 40
+engineOffset: 4
+engineSize: 2
+buildBeamOffset: 10
+buildSpeed: 10
+legCount: 2
+legMoveSpace: 0
+mechSideSway: 0
+mechFrontSway: 0
+mechStride: 0
+canDrown: false
+singleTarget: false
+deathExplosionEffect: nuclearcloud
+circleTarget: false
+faceTarget: true
+weapons: [
+{
+mirror: false
+shots: 8
+inaccuracy: 45
+rotate: false
+reload: 50
+mirror: false
+alternate: false
+shootCone: 45
+shootSound: bang
+hitSound: bang
+x: 0
+y: 0
+bullet: {
+type: BasicBulletType
+pierce: true
+pierceCap: 40
+lifetime: 80
+hitEffect: ballfire
+makeFire: true
+hittable: false
+reflectable: false
+trailEffect: ballfire
+incendAmount: 40
+incendSpread: 5
+homingPower: 1
+homingRange: 100
+width: 5
+height: 5
+status: melting
+mixColorFrom: efe4ca
+mixColorTo: ffd37f
+spin: 4
+sprite: heavySlagShot
+controllable: false
+autoTarget: true
+}
+}
+]
+isCounted: true
+lightRadius: 40
+lightOpacity: 1
+lightColor:995d9a
