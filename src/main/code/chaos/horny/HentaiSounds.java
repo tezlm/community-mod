@@ -1,4 +1,4 @@
-package chaos;
+package chaos.horny;
 
 import arc.Core;
 import arc.assets.AssetDescriptor;
@@ -6,7 +6,7 @@ import arc.assets.loaders.SoundLoader;
 import arc.audio.Sound;
 import mindustry.Vars;
 
-public class ChaosSounds {
+public class HentaiSounds {
     protected static Sound loadSound(String soundsName) {
         if (!Vars.headless) {
             String name = "chaosSounds/" + soundsName;
@@ -24,11 +24,12 @@ public class ChaosSounds {
     }
 
     public static Sound
-            pchd;
+            ohno;
 
     public static void load() {
 
-        pchd = loadSound("pchd");
+        ohno = loadSound("ohno");
     }
 }
+
 

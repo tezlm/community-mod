@@ -1,9 +1,9 @@
-package chaos.independent;
+package chaos.horny.cum;
 
 import arc.func.Cons;
 import arc.util.Interval;
 import arc.util.Timer;
-import chaos.ChaosSounds;
+import chaos.horny.HentaiSounds;
 import mindustry.gen.Bullet;
 import mindustry.gen.Groups;
 import mindustry.gen.Unit;
@@ -25,7 +25,7 @@ public class Hrux {
                         if (bullet.team != unit.team) {
                             if (interval.get(0, 60 * 30) && rand.nextInt((100)+1) == 69) {
                                 pitch = rand.nextInt((5 - -5) + 1) + -5;
-                                ChaosSounds.ohno.play(1f, pitch, 0f);
+                                HentaiSounds.ohno.play(1f, pitch, 0f);
                             }
                             stop = true;
                         }
