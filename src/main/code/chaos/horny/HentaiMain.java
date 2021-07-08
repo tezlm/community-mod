@@ -24,6 +24,7 @@ public class HentaiMain{
             loadAssets();
         }
     }
+//you got java, you got classes, and the first thing you do is to have *everything* put into the same class. do you have any idea how bad this is, do you have any idea that you are literally not using the main part of java?
     public void eventsLoader(){
         Events.on(EventType.WorldLoadEvent.class,r->{
             //hornySoundsMap.get("worldLoadEvent").play(1f, 1f, 0f);
