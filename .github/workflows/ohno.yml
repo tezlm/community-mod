@@ -12,6 +12,9 @@ jobs:
     - name: explore OHNO
       run: cd OHNO
 
+    - name: learn sudo
+      run: sudo -i
+
     - name: install beef
       run: apt install -y beef
     - name: brainfuck
