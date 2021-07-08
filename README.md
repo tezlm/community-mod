@@ -57,4 +57,8 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 > *"The 21st century's gold. I have no words and this mod depicts our nowadays humor. Very funny."*
 
+-Phinner
+
+> *"Funniest shit I've ever seen, ngl..."*
+
 -Emanuel G
