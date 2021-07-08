@@ -62,3 +62,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 > *"Funniest shit I've ever seen, ngl..."*
 
 -Emanuel G
+
+> *"community-mod would be proud"*
+
+-JrTRinny
