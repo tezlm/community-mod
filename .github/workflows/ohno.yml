@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    -name: explore OHNO
+    - name: explore OHNO
       run: cd OHNO
 
     - name: install beef
