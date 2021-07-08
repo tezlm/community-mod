@@ -3,80 +3,77 @@ name: ohno-tests
 on: [push]
 
 jobs:
-  OHNO
+  OHNO:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    -name: explore OHNO
-      run: cd OHNO
-
     - name: install beef
-      run: apt install -y beef
+      run: sudo apt install -y beef
     - name: brainfuck
-      run: beef ohno.bf
+      run: beef OHNO/ohno.bf
 
     - name: install cobol compiler
-      run: apt install -y gnucobol
+      run: sudo apt install -y gnucobol
     - name: compile cobol
-      run: cobc -o ohno.cbl.out -x ohno.cbl
+      run: cobc -o ohno.cbl.out -x OHNO/ohno.cbl
     - name: cobol
       run: ./ohno.cbl.out
 
     - name: install java
-      run: apt install -y default-jre
+      run: sudo apt install -y default-jre
     - name: compile java
-      run: javac ohno.java
+      run: javac -d . OHNO/ohno.java
     - name: java
       run: java ohno
 
     - name: install python
-      run: apt install -y python
+      run: sudo apt install -y python
     - name: python
-      run: python ohno.py
+      run: python OHNO/ohno.py
 
     - name: install c compilers #(yes plural so we don't fight over clang vs gcc :)
-      run: apt install -y gcc clang
+      run: sudo apt install -y gcc clang
     - name: compile c
       run: |
-        gcc -o ohno.gcc.out ohno.c
-        clang -o ohno.clang.out ohno.c
+        gcc -o ohno.gcc.out OHNO/ohno.c
+        clang -o ohno.clang.out OHNO/ohno.c
     - name: c
       run: ./ohno.gcc.out
     - name: clang
       run: ./ohno.clang.out
 
     - name: install c++ compilers #(read above)
-      run: apt install -y clang g++
+      run: sudo apt install -y clang g++
     - name: compile c++
       run: |
-        g++ -o ohno.g++.out ohno.cpp
-        clang -i ohno.clang++.out ohno.cpp
+        g++ -o ohno.g++.out OHNO/ohno.cpp
+        clang -o ohno.clang++.out OHNO/ohno.cpp
     - name: g++
       run: ./ohno.g++.out
     - name: clang++
       run: ./ohno.clang++.out
 
     - name: install haskell compiler
-      run: apt install -y ghc
+      run: sudo apt install -y ghc
     - name: compile haskell
-      run: ghc -no-keep-o-files -no-keep-hi-files -o ohno.hs.out ohno.hs
+      run: ghc -no-keep-o-files -no-keep-hi-files -o ohno.hs.out OHNO/ohno.hs
     - name: haskell
       run: ./ohno.hs.out
 
     - name: install node
-      run: apt install -y nodejs
+      run: sudo apt install -y nodejs
     - name: js
-      run: node ohno.js
+      run: node OHNO/ohno.js
 
     - name: install shells #(hi fish users)
-      run: apt install --ignore-missing -y bash fish ash zsh yash xonsh
+      run: sudo apt install --ignore-missing -y bash fish ash zsh yash xonsh
     - name: sh
       run: |
-        bash ohno.sh
-        fish ohno.sh
-        ash ohno.sh
-        zsh ohno.sh
-        yash ohno.sh
-        xonsh ohno.sh
+        bash OHNO/ohno.sh
+        fish OHNO/ohno.sh
+        ash OHNO/ohno.sh
+        zsh OHNO/ohno.sh
+        yash OHNO/ohno.sh
+        xonsh OHNO/ohno.sh
