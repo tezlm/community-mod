@@ -1,4 +1,4 @@
-name: Auto-Release
+name: Dont-Auto-Release
 
 on:
   workflow_run:
