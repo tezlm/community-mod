@@ -1,8 +1,5 @@
-/*#include <iostream>
-using namespace std;
+#include <iostream>
 
 int main() {
-  cout << "ohno" << endl;
-  return 0;
+  std::cout << "ohno" << std::endl;
 }
-*/
