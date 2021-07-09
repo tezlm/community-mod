@@ -4,7 +4,7 @@ UnitTypes.toxopid.speed = 8
 UnitTypes.toxopid.legSpeed = 12
 
 //Arkyid too
-UnitTypes.toxopid.speed = 4
-UnitTypes.toxopid.legSpeed = 6
+UnitTypes.arkyid.speed = 4
+UnitTypes.arkyid.legSpeed = 6
 
 //Will add more if I want to LOL
