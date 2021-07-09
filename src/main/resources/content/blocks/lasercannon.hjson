@@ -1,0 +1,31 @@
+type: PowerTurret
+localizedName: Lasercannon
+description: "basically laser pistol in basically any game -aden8r"
+details: please work
+
+requirements: [
+  silicon/85
+]
+
+powerUse: 2
+shootType: {
+  type: LaserBulletType
+  damage: 9
+  lifetime: 5
+  pierce: true
+  colors: [ff0000ff, ff8080ff, ffffffff]
+  length: 150
+  width: 10
+}
+
+range: 150
+reloadTime: 15
+shootSound: sap
+recoilAmount: 0.5
+smokeEffect: none
+rotateSpeed: 10
+
+health: 650
+size: 2
+
+category: turret
