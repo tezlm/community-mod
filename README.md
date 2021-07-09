@@ -66,6 +66,6 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 -Emanuel G
 
-> *"community-mod would be proud"*
+> *"This shows that anyone can make a mod"*
 
 -JrTRinny
