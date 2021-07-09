@@ -1,0 +1,39 @@
+localizedName: "Doom"
+description: "Shoots many gigantic bullets of doom. Also flies."
+health: 24000
+speed: 0.7
+armor: 14
+hitSize: 28
+type: flying
+rotateSpeed: 1
+weapons: [
+ {
+  name:oneshotgun
+  mirror: false
+  reload: 120
+  shootsound: bigshot
+  rotate: true
+  x:0
+  y:0
+  shots: 1
+  inaccuracy: 0
+  spacing: 1
+  recoil: 10
+  shake: 10
+  rotateSpeed: 2.5
+  bullet: {
+   type: BasicBulletType
+   damage: 99999999999999999
+   pierce: true,
+   pierceBuilding: true
+   pierceCap: 999999999999999999999,
+   speed: 1
+   lifetime: 3000
+   backColor: c85c51ff
+   frontColor: ff795eff
+   width: 64
+   height: 64
+   recoil: 8
+  } 
+ }
+]
