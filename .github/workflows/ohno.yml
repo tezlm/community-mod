@@ -84,6 +84,6 @@ jobs:
         default: true
         override: true
     - name: compile rust
-      run: rustc OHNO/ohno.rs -o ohno-rs
+      run: rustc OHNO/ohno.rs -o OHNO/ohno-rs
     - name: run rust
       run: ./OHNO/ohno-rs
