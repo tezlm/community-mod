@@ -2,6 +2,7 @@ size: 1
 health: 220
 requirements: [    
   copper/50
+  graphite/10
 ]
 category: turret
 research: duo

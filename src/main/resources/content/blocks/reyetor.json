@@ -5,9 +5,8 @@
 "requirements": 
 [
 "surge-alloy/6"
+"phase-fabric/6"
 ],
-"description": "The God of all routers and distributors."
-"details": "The hell awaits.",
 "health": 6666,
 "category": "distribution"
 }

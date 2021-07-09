@@ -2,6 +2,7 @@ size: 1
 health: 300
 requirements: [    
   copper/70
+  titanium/25
 ]
 category: turret
 research: trio
