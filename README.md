@@ -69,3 +69,8 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 > *"This shows that anyone can make a mod"*
 
 -JrTRinny
+
+
+> anook is fat
+
+-summet
