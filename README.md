@@ -46,7 +46,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 -FarmerThanos
 
-> lmfao
+> *"lmfao"*
 
 -cyberflame
 
@@ -71,6 +71,6 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 -JrTRinny
 
 
-> anook is fat
+> *"anook is fat"*
 
 -summet
