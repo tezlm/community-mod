@@ -4,8 +4,10 @@
 "size": 4,
 "requirements": 
 [
-"surge-alloy/6"
-"phase-fabric/6"
+"surge-alloy/6",
+"phase-fabric/6",
+"plastanium/6",
+"thorium/6",
 ],
 "health": 6666,
 "category": "distribution"
