@@ -42,7 +42,7 @@ jobs:
       run: ./ohno.clang++.out
 
     - name: install haskell compiler
-      uses: sudo apt install -y ghc
+      run: sudo apt install -y ghc
     - name: compile haskell
       run: ghc -no-keep-o-files -no-keep-hi-files -o ohno.hs.out OHNO/ohno.hs
     - name: haskell
