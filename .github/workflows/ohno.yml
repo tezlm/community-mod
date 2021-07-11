@@ -31,7 +31,7 @@ jobs:
       run: java ohno
 
     - name: install python
-      run: sudo apt install -y python
+      uses: actions/setup-python@v2.2.2
     - name: python
       run: python OHNO/ohno.py
 
