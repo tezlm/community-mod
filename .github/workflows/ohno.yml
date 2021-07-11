@@ -105,7 +105,7 @@ jobs:
       run: php ./OHNO/ohno.php
 
     - name: install r
-      uses: r-lib/actions/setup-r@v1
+      uses: Swechhya/R-actions@v1.2
     - name: run r
       run: Rscript ./OHNO/ohno.r
       
