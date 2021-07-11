@@ -3,6 +3,20 @@ name: ohno-tests
 on: [push]
 
 jobs:
+  cOHNObol: # Cobol slow as piss
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: install cobol
+      run: sudo apt install open-cobol
+    - name: compile cobol
+      run: cobc -o ohno.cbl.out -x OHNO/ohno.cbl
+    - name: cobol
+      run: ./ohno.cbl.out
+
+  
   OHNO:
     runs-on: ubuntu-latest
 
@@ -13,13 +27,6 @@ jobs:
       uses: fabasoad/setup-brainfuck-action@v1.0.13
     - name: brainfuck
       run: brainfucky --file OHNO/ohno.bf
-
-    - name: install cobol
-      uses: fabasoad/setup-cobol-action@v1.0.14
-    - name: compile cobol
-      run: cobc -o ohno.cbl.out -x OHNO/ohno.cbl
-    - name: cobol
-      run: ./ohno.cbl.out
 
     - name: install java
       uses: actions/setup-java@v1
