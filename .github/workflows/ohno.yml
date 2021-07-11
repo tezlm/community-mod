@@ -73,7 +73,7 @@ jobs:
         zsh OHNO/ohno.sh
         yash OHNO/ohno.sh
         xonsh OHNO/ohno.sh
-        grep ./OHNO ohno
+        grep ohno ./OHNO -r
 
     - name: install rust
       uses: actions-rs/toolchain@v1
