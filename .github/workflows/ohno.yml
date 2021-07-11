@@ -108,6 +108,13 @@ jobs:
       uses: shivammathur/setup-php@v2
     - name: php
       run: php ./OHNO/ohno.php
+      
+    - name: install r
+      uses: r-lib/actions/setup-r@v1
+      with:
+        r-version: '3.5.3'
+    - name: run r
+      run: rscript ./OHNO/ohno.r
 
   windOHNOs:
     runs-on: windows-latest
