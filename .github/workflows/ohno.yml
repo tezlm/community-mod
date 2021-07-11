@@ -106,6 +106,9 @@ jobs:
 
     - name: install r
       uses: Swechhya/R-actions@v1.2
+      with:
+        action: 'build'
+        needsBioc: false
     - name: run r
       run: Rscript ./OHNO/ohno.r
       
