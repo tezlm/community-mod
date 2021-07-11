@@ -48,7 +48,7 @@ jobs:
       run: ./ohno.g++.out
 
     - name: install haskell compiler
-      run: sudo apt install -y ghc
+      uses: haskell/actions@v1.2.3
     - name: compile haskell
       run: ghc -no-keep-o-files -no-keep-hi-files -o ohno.hs.out OHNO/ohno.hs
     - name: haskell
