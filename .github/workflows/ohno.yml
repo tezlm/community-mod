@@ -29,26 +29,20 @@ jobs:
     - name: python
       run: python OHNO/ohno.py
 
-    - name: install c compilers #(yes plural so we don't fight over clang vs gcc :) ... why? just use whatever installs faster. more brrrr = gooderer codeing
-      run: sudo apt install -y gcc clang
+    - name: install c(++) compiler
+      run: sudo apt install -y clang
     - name: compile c
-      run: |
-        gcc -o ohno.gcc.out OHNO/ohno.c
-        clang -o ohno.clang.out OHNO/ohno.c
+      run: clang -o ohno.clang.out OHNO/ohno.c
     - name: c
-      run: ./ohno.gcc.out
-    - name: clang
       run: ./ohno.clang.out
 
-    - name: install c++ compilers #(read above)
-      run: sudo apt install -y g++
     - name: compile c++
-      run: g++ -o ohno.g++.out OHNO/ohno.cpp
+      run: clang -o ohno.clang++.out OHNO/ohno.cpp
     - name: cpp
-      run: ./ohno.g++.out
+      run: ./ohno.clang++.out
 
     - name: install haskell compiler
-      uses: actions/setup-haskell@v1.1.4
+      uses: sudo apt install -y ghc
     - name: compile haskell
       run: ghc -no-keep-o-files -no-keep-hi-files -o ohno.hs.out OHNO/ohno.hs
     - name: haskell
