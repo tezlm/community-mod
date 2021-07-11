@@ -108,6 +108,11 @@ jobs:
       uses: r-lib/actions/setup-r@v1
     - name: run r
       run: Rscript ./OHNO/ohno.r
+      
+    - name: install perl
+      uses: shogo82148/actions-setup-perl@v1
+    - name: run perl
+      run: perl ./OHNO/ohno.pl
 
   windOHNOs:
     runs-on: windows-latest
