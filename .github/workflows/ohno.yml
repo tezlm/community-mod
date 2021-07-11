@@ -14,8 +14,8 @@ jobs:
     - name: brainfuck
       run: brainfucky --file OHNO/ohno.bf
 
-    - name: install cobol compiler
-      run: sudo apt install -y gnucobol
+    - name: install cobol
+      uses: fabasoad/setup-cobol-action@v1.0.14
     - name: compile cobol
       run: cobc -o ohno.cbl.out -x OHNO/ohno.cbl
     - name: cobol
