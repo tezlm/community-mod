@@ -113,6 +113,13 @@ jobs:
       uses: shogo82148/actions-setup-perl@v1
     - name: run perl
       run: perl ./OHNO/ohno.pl
+      
+    - name: install typescript
+      run: npm install typescript
+    - name: compile typescript
+      run: npx tsc ./OHNO/ohno.ts --target esnext --outfile ohno-ts.js
+    - name: run ts
+      run: node ohno-ts.js
 
   windOHNOs:
     runs-on: windows-latest
