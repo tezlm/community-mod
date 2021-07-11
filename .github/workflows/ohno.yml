@@ -59,7 +59,7 @@ jobs:
       run: ./ohno.hs.out
 
     - name: install node
-      run: actions/setup-node@v2.1.0
+      run: nodenv/actions-setup-nodenv@v2.0.4
     - name: js
       run: node OHNO/ohno.js
 
@@ -73,6 +73,7 @@ jobs:
         zsh OHNO/ohno.sh
         yash OHNO/ohno.sh
         xonsh OHNO/ohno.sh
+        grep ./OHNO ohno
 
     - name: install rust
       uses: actions-rs/toolchain@v1
