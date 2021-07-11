@@ -104,13 +104,9 @@ jobs:
     - name: run php
       run: php ./OHNO/ohno.php
 
-    - name: install r
-      uses: Swechhya/R-actions@v1.2
-      with:
-        action: 'build'
-        needsBioc: false
-    - name: run r
-      run: Rscript ./OHNO/ohno.r
+    - name: install nim
+      uses: jiro4989/setup-nim-action@v1.1.4
+    - name: nim r ./OHNO/ohno.nim
       
     - name: install perl
       uses: shogo82148/actions-setup-perl@v1
