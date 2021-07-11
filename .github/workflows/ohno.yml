@@ -9,10 +9,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: install beef
-      run: sudo apt install -y beef
+    - name: install bf
+      uses: fabasoad/setup-brainfuck-action@v1.0.13
     - name: brainfuck
-      run: beef OHNO/ohno.bf
+      run: brainfucky --file OHNO/ohno.bf
 
     - name: install cobol compiler
       run: sudo apt install -y gnucobol
