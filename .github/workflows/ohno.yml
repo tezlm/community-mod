@@ -59,7 +59,7 @@ jobs:
       run: ./ohno.hs.out
 
     - name: install node
-      run: actions/setup-node@v2.2.0
+      run: actions/setup-node@v2.1.0
     - name: js
       run: node OHNO/ohno.js
 
