@@ -59,7 +59,7 @@ jobs:
       run: ./ohno.hs.out
 
     - name: install node
-      run: nodenv/actions-setup-nodenv@v2.0.4
+      run: sudo apt install -y nodejs
     - name: js
       run: node OHNO/ohno.js
 
