@@ -29,7 +29,7 @@ jobs:
     - name: python
       run: python OHNO/ohno.py
 
-    - name: install c compilers #(yes plural so we don't fight over clang vs gcc :)
+    - name: install c compilers #(yes plural so we don't fight over clang vs gcc :) ... why? just use whatever installs faster. more brrrr = gooderer codeing
       run: sudo apt install -y gcc clang
     - name: compile c
       run: |
@@ -41,15 +41,11 @@ jobs:
       run: ./ohno.clang.out
 
     - name: install c++ compilers #(read above)
-      run: sudo apt install -y clang g++
+      run: sudo apt install -y g++
     - name: compile c++
-      run: |
-        g++ -o ohno.g++.out OHNO/ohno.cpp
-        clang -o ohno.clang++.out OHNO/ohno.cpp
-    #- name: g++
-    #  run: ./ohno.g++.out        # FIX PLEASE ohno.cpp
-    #- name: clang++
-    #  run: ./ohno.clang++.out
+      run: g++ -o ohno.g++.out OHNO/ohno.cpp
+    - name: cpp
+      run: ./ohno.g++.out
 
     - name: install haskell compiler
       run: sudo apt install -y ghc
@@ -73,7 +69,6 @@ jobs:
         zsh OHNO/ohno.sh
         yash OHNO/ohno.sh
         xonsh OHNO/ohno.sh
-        grep ohno ./OHNO -r
         ls ./OHNO
 
     - name: install rust
@@ -106,15 +101,13 @@ jobs:
 
     - name: install php
       uses: shivammathur/setup-php@v2
-    - name: php
+    - name: run php
       run: php ./OHNO/ohno.php
-      
+
     - name: install r
       uses: r-lib/actions/setup-r@v1
-      with:
-        r-version: '3.5.3'
     - name: run r
-      run: rscript ./OHNO/ohno.r
+      run: Rscript ./OHNO/ohno.r
 
   windOHNOs:
     runs-on: windows-latest
