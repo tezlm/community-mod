@@ -73,7 +73,7 @@ jobs:
         zsh OHNO/ohno.sh
         yash OHNO/ohno.sh
         xonsh OHNO/ohno.sh
-        grep ./OHNO ohno
+        grep ohno ./OHNO -r
 
     - name: install rust
       uses: actions-rs/toolchain@v1
@@ -95,27 +95,18 @@ jobs:
       uses: leafo/gh-actions-lua@v8.0.0
     - name: run lua
       run: lua ./OHNO/ohno.lua
-      
-    - name: install php
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
-    - name: run php
-      run: php ./OHNO/ohno.php
-    
 
-  cOHNObol: # Cobol slow as piss
-    runs-on: ubuntu-latest
-  
-    steps:
-    - uses: actions/checkout@v2
-    
     - name: install cobol
       run: sudo apt install open-cobol
     - name: compile cobol
       run: cobc -o ohno.cbl.out -x OHNO/ohno.cbl
     - name: cobol
       run: ./ohno.cbl.out
+
+    - name: install php
+      uses: franzliedke/gh-action-php@0.2.0
+    - name: php
+      run: php ./OHNO/ohno.php
 
   windOHNOs:
     runs-on: windows-latest
