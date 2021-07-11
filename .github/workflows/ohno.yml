@@ -110,7 +110,7 @@ jobs:
     - name: cobol
       run: ./ohno.cbl.out
 
-  bloatware:
+  windOHNOs:
     runs-on: windows-latest
     
     steps:
