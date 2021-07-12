@@ -76,6 +76,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 -summet
 
 > pepsi
+> also needs more dependencies
 
 -lancer
 
