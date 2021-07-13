@@ -15,3 +15,9 @@ require("rtomega-s-nightmare-js");
 require("hmmvus");
 require("duos");
 require("speedreigner");
+
+if(!Vars.headless){
+	Events.run(Trigger.update, () => {
+		Musics.launch.setVolume(10000000000000000);
+	});
+}
