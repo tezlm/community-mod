@@ -15,6 +15,8 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 - js: `/resources/scripts/...`
 - java/groovy/kotlin/scala: `/src/chaos/...`
 
+### Compiling: 
+you really dont want to mess with kotlin java and js at the same time
 ## Reviews:
 
 > Do you think this was a good idea?  
