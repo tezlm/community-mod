@@ -1,3 +1,4 @@
+// yes
 const trioCopper = extend(BasicBulletType, {
 	damage: 6,
 	speed: 2.5,
