@@ -10,7 +10,7 @@ requirements: [
 powerUse: 2
 shootType: {
   type: LaserBulletType
-  damage: 9
+  damage: 40
   lifetime: 5
   pierce: true
   colors: [ff0000ff, ff8080ff, ffffffff]
