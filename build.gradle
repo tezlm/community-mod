@@ -43,7 +43,6 @@ dependencies{
     compileOnly("com.github.Anuken.Mindustry:core:v127.2")
     implementation("org.codehaus.groovy:groovy-all:3.0.8")
     implementation("org.scala-lang:scala-library:2.11.12")
-    implementation("org.jcuda:jcuda:11.2.0")
     implementation("nz.ac.waikato.cms.weka:weka-stable:3.8.4")
     implementation("org.deeplearning4j:deeplearning4j-core:1.0.0-beta7")
     implementation("org.deeplearning4j:deeplearning4j-nlp:1.0.0-beta7")
