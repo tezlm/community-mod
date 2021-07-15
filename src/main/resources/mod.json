@@ -6,5 +6,5 @@
     "version": "0.0.1",
     "minGameVersion": 127.2,
     "main": "chaos.Main",
-    "dependencies": ["dubiouswhiteliquidustry", "betamindy"]
+    "dependencies": ["dubiouswhiteliquidustry", "betamindy", "routorio"]
 }
