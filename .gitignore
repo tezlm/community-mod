@@ -4,3 +4,18 @@
 
 .DS_Store
 desktop.ini
+*.png
+*.java
+*.js
+*.json
+*.hjson
+*.bat
+*.sh
+*.xml
+*.jar
+*.properties
+*.yml
+/OHNO
+/gradle
+/src
+/workflows
