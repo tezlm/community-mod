@@ -101,3 +101,7 @@ you really dont want to mess with kotlin java and js at the same time
 > i came here looking for porn and found none. 0/10
 
 -Goober
+
+# Comments
+
+SMOLKEYS to #20: really goober
