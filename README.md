@@ -17,7 +17,9 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 ### Compiling: 
 you really dont want to mess with kotlin java and js at the same time
-## Reviews:
+##Reviews
+<details>
+  <summary>Reviews:</summary>
 
 > Do you think this was a good idea?  
 > yes
@@ -101,7 +103,4 @@ you really dont want to mess with kotlin java and js at the same time
 > i came here looking for porn and found none. 0/10
 
 -Goober
-
-# Comments
-
-SMOLKEYS to #20: really goober
+</details>
