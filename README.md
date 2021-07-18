@@ -17,7 +17,7 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 ### Compiling: 
 you really dont want to mess with kotlin java and js at the same time
-##Reviews
+## Reviews
 <details>
   <summary>Reviews:</summary>
 
