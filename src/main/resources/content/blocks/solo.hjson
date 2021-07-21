@@ -1,0 +1,7 @@
+size: 1
+health: 350
+requirements: [    
+  copper/100
+]
+category: turret
+research: quatro 
