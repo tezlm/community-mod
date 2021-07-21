@@ -193,10 +193,10 @@ const quatro = extend(ItemTurret, "quatro", {
 });
 
 solo.ammo(
-  Items.copper, soloCopper,
-  Items.graphite, soloDense,
-  Items.silicon, soloHoming,
-  Items.pyratite, soloIncendiary
+        Items.copper, soloCopper,
+        Items.graphite, soloDense,
+        Items.silicon, soloHoming,
+        Items.pyratite, soloIncendiary
 );
 trio.ammo(
 	Items.copper, trioCopper,
