@@ -4,7 +4,7 @@
     "author": "@everyone",
     "description": "A Mod made by the Community for the Community!",
     "version": "0.0.1",
-    "minGameVersion": 999,
+    "minGameVersion": -1,
     "main": "chaos.Main",
     "dependencies": [JOKES ON YOU THERE IS NONE]
 }
