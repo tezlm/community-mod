@@ -36,6 +36,8 @@ repositories{
     maven{url("https://jitpack.io")}
 }
 
+boolean zip64 = true
+
 dependencies{
     compileOnly("com.github.Anuken.Mindustry:desktop:v127.2")
     compileOnly("com.github.Anuken.Arc:arc-core:v127.2")
