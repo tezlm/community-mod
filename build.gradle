@@ -36,8 +36,6 @@ repositories{
     maven{url("https://jitpack.io")}
 }
 
-boolean zip64 = true
-
 dependencies{
     compileOnly("com.github.Anuken.Mindustry:desktop:v127.2")
     compileOnly("com.github.Anuken.Arc:arc-core:v127.2")
@@ -55,6 +53,7 @@ dependencies{
 }
 
 jar{
+    zip64 true
     archiveFileName.set("${jarName}.jar")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     
@@ -75,6 +74,7 @@ compileGroovy{
 
 // credits to sonnicon
 task dexify(type: Jar, dependsOn: [jar]){
+    zip64 true
     archiveFileName.set("dexed-${jarName}.jar")
 
     def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "${jarName}.jar")
