@@ -4,6 +4,8 @@
 # The Community Mod
 **A Mod by The Community for the Community!**
 
+Milestone as of 26/07/2021: the mod is 1.9GB
+
 ## How to use
 Star the mod for free collab. If starring it doesn't work try [this](https://github.com/sample-text-here/community-mod/invitations).
 
