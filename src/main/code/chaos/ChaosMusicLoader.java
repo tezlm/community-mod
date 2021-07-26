@@ -32,6 +32,7 @@ public class ChaosMusicLoader {
 
         crime = loadMusic("crime");
         corvus = loadMusic("corvus");
+        S1W1 = loadMusic("S1W1");
         anukian_tomb_full = loadMusic("anukian_tomb_full");
     }
 }
