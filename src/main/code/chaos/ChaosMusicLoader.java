@@ -26,13 +26,13 @@ public class ChaosMusicLoader {
     }
 
     public static Music
-            crime, corvus, S1W1, anukian_tomb_full;
+            doom, crime, corvus, anukian_tomb_full;
 
     public static void load() {
 
         crime = loadMusic("crime");
         corvus = loadMusic("corvus");
-        s1w1 = loadMusic("S1W1");
+        s1w1 = loadMusic("doom");
         anukian_tomb_full = loadMusic("anukian_tomb_full");
     }
 }
