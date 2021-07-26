@@ -12,14 +12,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
-import org.tensorflow.ConcreteFunction;
-import org.tensorflow.Signature;
-import org.tensorflow.Tensor;
-import org.tensorflow.TensorFlow;
-import org.tensorflow.op.Ops;
-import org.tensorflow.op.core.Placeholder;
-import org.tensorflow.op.math.Add;
-import org.tensorflow.types.TInt32;
 
 import java.util.*;
 
@@ -53,7 +45,6 @@ public class HentaiMain{
             throw new RuntimeException("Hentai is confirmed");
         });
         }catch (Exception confirmed){
-            System.out.println("TensorFlow " + TensorFlow.version());
             return true;
         }
         return false;
