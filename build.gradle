@@ -21,7 +21,7 @@ plugins{
     id "groovy"
     id "scala"
     id "org.jetbrains.kotlin.jvm" version "1.5.0"
-    id("gradle-clojure.clojure") version "0.5.0-alpha.1"
+    id "gradle-clojure.clojure" version "0.5.0-alpha.1"
 }
 
 sourceCompatibility = 1.8
