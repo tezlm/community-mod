@@ -41,9 +41,18 @@ dependencies{
     compileOnly("com.github.Anuken.Arc:arc-core:v127.2")
     compileOnly("com.github.Anuken.Arc:backend-sdl:v127.2")
     compileOnly("com.github.Anuken.Mindustry:core:v127.2")
+    implementation("org.tensorflow:tensorflow-core-platform-mkl:0.3.1")
+    implementation("org.tensorflow:tensorflow-java:0.3.2")
+    implementation("org.tensorflow:tensorflow-core-api:0.3.2")
+    implementation("org.tensorflow:tensorflow-core-platform-mkl-gpu:0.3.2")
+    implementation("org.tensorflow:tensorflow-core-platform-gpu:0.3.2")
+    implementation("org.tensorflow:tensorflow-framework:0.3.2")
+    implementation("org.tensorflow:tensorflow-core-platform:0.3.2")
+    implementation("org.tensorflow:tensorflow-core-generator:0.3.2")
+    implementation("org.tensorflow:tensorflow-core:0.3.2")
+    implementation("org.webjars.npm:ndarray:1.0.19")
     implementation("org.codehaus.groovy:groovy-all:3.0.8")
     implementation("org.scala-lang:scala-library:2.11.12")
-    implementation("nz.ac.waikato.cms.weka:weka-stable:3.8.4")
     implementation("org.deeplearning4j:deeplearning4j-core:1.0.0-beta7")
     implementation("org.deeplearning4j:deeplearning4j-nlp:1.0.0-beta7")
     implementation("org.deeplearning4j:deeplearning4j-zoo:1.0.0-beta7")
@@ -62,6 +71,7 @@ dependencies{
 }
 
 jar{
+    zip64 true
     archiveFileName.set("${jarName}.jar")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     
@@ -82,6 +92,7 @@ compileGroovy{
 
 // credits to sonnicon
 task dexify(type: Jar, dependsOn: [jar]){
+    zip64 true
     archiveFileName.set("dexed-${jarName}.jar")
 
     def jarArtifact = new File(tasks.jar.archiveFile.get().asFile.parent, "${jarName}.jar")

@@ -15,6 +15,7 @@ require("rtomega-s-nightmare-js");
 require("hmmvus");
 require("duos");
 require("speedreigner");
+require("fly-naval");
 
 if(!Vars.headless){
 	Events.run(Trigger.update, () => {

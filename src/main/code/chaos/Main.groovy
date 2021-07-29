@@ -32,5 +32,6 @@ class Main extends Mod{
 	@Override
 	void init(){
 		new HentaiMain();
+		ChaosSettings.init();
 	}
 }

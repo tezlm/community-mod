@@ -4,6 +4,8 @@
 # The Community Mod
 **A Mod by The Community for the Community!**
 
+Milestone as of 26/07/2021: the mod is 1.9GB
+
 ## How to use
 Star the mod for free collab. If starring it doesn't work try [this](https://github.com/sample-text-here/community-mod/invitations).
 
@@ -17,7 +19,9 @@ Star the mod for free collab. If starring it doesn't work try [this](https://git
 
 ### Compiling: 
 you really dont want to mess with kotlin java and js at the same time
-## Reviews:
+## Reviews
+<details>
+  <summary>Reviews:</summary>
 
 > Do you think this was a good idea?  
 > yes
@@ -101,3 +105,4 @@ you really dont want to mess with kotlin java and js at the same time
 > i came here looking for porn and found none. 0/10
 
 -Goober
+</details>
