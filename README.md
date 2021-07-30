@@ -23,86 +23,92 @@ you really dont want to mess with kotlin java and js at the same time
 <details>
   <summary>Reviews:</summary>
 
-> Do you think this was a good idea?  
-> yes
+> *"Do you think this was a good idea?"*  
+> *"yes"*
+  
+— Anuke
 
--Anuke
+
+
 
 > *"10/10 Mod"*
 
--RT
+— RT
 
 > *"11/10, Truly a masterpiece, handcrafted by the best of us."*
 
--CancerGuy
+— CancerGuy
 
 > *"how do you compile"*
 
--MrDuck557
+— MrDuck557
 
 > *"what a great idea"*
 
--NiChrosia
+— NiChrosia
 
-> what happened to the merge bot. thats right you need to add more then you delete
+> *"what happened to the merge bot. thats right you need to add more then you delete"*
 
--mega cat
+— mega cat
 
 > *"If IBM saw this, they would only understand we have made an attempt at making a computer, except there isnt a computer here nor IBM. 5 stars.*"
 
--FarmerThanos
+— FarmerThanos
 
 > *"lmfao"*
 
--cyberflame
+— cyberflame
 
 > *"10/10 mod, only 3% of it works"*
 
--SMOLKEYS
+— SMOLKEYS
 
 > *"Rated M for Masterpiece , 10/10 would pick it up and donate to the people working on this"*
 
--Roomba
+— Roomba
 
 > *"The 21st century's gold. I have no words and this mod depicts our nowadays humor. Very funny."*
 
--Phinner
+— Phinner
 
 > *"Funniest shit I've ever seen, ngl..."*
 
--Emanuel G
+— Emanuel G
 
 > *"This shows that anyone can make a mod"*
 
--JrTRinny
-
+— JrTRinny
 
 > *"anook is fat"*
 
--summet
+— summet
 
-> pepsi
-> also needs more dependencies
+> *"pepsi*  
+> *also needs more dependencies"*
 
--lancer
+— lancer
 
-> needs more ook
+> *"needs more ook"*
 
--buthed010203
+— buthed010203
 
-> how do i review
+> *"how do i review"*
 
--shift
+— shift
 
-> pure perfection, add something now
+> *"pure perfection, add something now"*
 
--adenator
+— adenator
 
-> oh no im commiting anook fat
+> *"oh no im commiting anook fat"*
 
--WilloIzCitron
+— WilloIzCitron
 
-> i came here looking for porn and found none. 0/10
+> *"i came here looking for porn and found none. 0/10"*
 
--Goober
+— Goober
+  
+> *"you'd better format your reviews correctly or consequences"* 
+  
+— ifritdiezel
 </details>
